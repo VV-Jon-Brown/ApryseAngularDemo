@@ -1,4 +1,6 @@
 <div class="page">
   <div class="header">Angular sample</div>
   <div #viewer class="viewer"></div>
+  <app-doc-list id="documentList" *ngIf="true" [documentPath]="documentPath" (documentSelected)="docListSelect()"></app-doc-list>
+  <app-doc-list id="documentList2" *ngIf="true" [documentPath]="documentPath" (documentSelected)="docListSelect()"></app-doc-list>
 </div>
